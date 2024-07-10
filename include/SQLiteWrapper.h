@@ -33,7 +33,7 @@ namespace sqlite {
 namespace detail {
 
 template <typename T>
-inline bool dependent_false = false;
+inline constexpr bool dependent_false = false;
 
 // Given a concrete function type T:
 //   get_fn_info<T>::ret_type is the return type
